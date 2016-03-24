@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="main_screen_items">
+        <item>Shipping &amp; Returns</item>
+        <item>General FAQ</item>
+        <item>Privacy Policy</item>
+        <item>Gift Card</item>
+        <item>Help//Contact Us</item>
+        <item>Terms &amp; Conditions</item>
+    </string-array>
+
+    <string-array name="fake_main_screen_items_urls">
+        <item>https://qa-surfstitch-main.udev1a.net/h5/content?pageToLoad=%2Finfo%2FGeneral_FAQ</item>
+        <item>https://qa-surfstitch-main.udev1a.net/h5/content?pageToLoad=%2Finfo%2Ffooter_privacy_policy</item>
+        <item>https://qa-surfstitch-main.udev1a.net/h5/giftCertificate</item>
+        <item>https://qa-surfstitch-main.udev1a.net/h5/content?pageToLoad=%2Finfo%2Fhelp</item>
+        <item>https://qa-surfstitch-main.udev1a.net/h5/content?pageToLoad=%2Finfo%2Ffooter_terms_and_conditions</item>
+    </string-array>
+
+    <string-array name="main_screen_subitems">
+        <item>Gift Wrapping</item>
+        <item>Free Australian Shipping</item>
+        <item>Express New Zealand Shipping</item>
+        <item>Express International Shipping</item>
+        <item>Australian Return</item>
+        <item>International Returns</item>
+    </string-array>
+
+    <string-array name="fake_main_screen_subitems_urls">
+        <item>https://qa-surfstitch-main.udev1a.net/h5/content?pageToLoad=%2Finfo%2FGift_Wrapping</item>
+        <item>https://qa-surfstitch-main.udev1a.net/h5/content?pageToLoad=%2Finfo%2FAustralian_Delivery</item>
+        <item>https://qa-surfstitch-main.udev1a.net/h5/content?pageToLoad=%2Finfo%2FNew_Zealand_Delivery</item>
+        <item>https://qa-surfstitch-main.udev1a.net/h5/content?pageToLoad=%2Finfo%2FInternational_Delivery</item>
+        <item>https://qa-surfstitch-main.udev1a.net/h5/content?pageToLoad=%2Finfo%2FAustralian_Returns</item>
+        <item>https://qa-surfstitch-main.udev1a.net/h5/content?pageToLoad=%2Finfo%2FInternational_Returns</item>
+    </string-array>
+
+    <string-array name="cards_types">
+        <item>Visa</item>
+        <item>Master Card</item>
+        <item>American Express</item>
+    </string-array>
+
+    <string-array name="month_numbers">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+    <string-array name="titles_array">
+        <item>Mr</item>
+        <item>Mrs</item>
+        <item>Ms</item>
+        <item>Dr</item>
+    </string-array>
+
+</resources>

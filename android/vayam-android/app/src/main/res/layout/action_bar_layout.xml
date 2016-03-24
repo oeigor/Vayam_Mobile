@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/action_bar_height"
+                android:background="@color/orange">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:weightSum="1">
+
+        <ImageView android:id="@+id/menu"
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight="0.15"
+                   android:padding="10dp"
+                   android:layout_margin="5dp"
+                   android:src="@drawable/ic_dehaze_white_36dp"/>
+
+        <ImageView android:id="@+id/search"
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight="0.15"
+                   android:padding="10dp"
+                   android:layout_margin="5dp"
+                   android:src="@drawable/ic_search_white_36dp"/>
+
+        <ImageView android:id="@+id/logo"
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight="0.4"
+                   android:padding="10dp"
+                   android:layout_margin="5dp"
+                   android:src="@drawable/object_edge_long"/>
+
+        <RelativeLayout
+            android:id="@+id/favorites"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            android:padding="8dp"
+            android:layout_margin="5dp">
+
+            <ImageView android:id="@+id/favoritesStar"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:layout_centerInParent="true"
+                       android:src="@drawable/ic_favorite_border_white_36dp"/>
+
+            <TextView
+                android:id="@+id/favoritesCounter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/extra_standard_padding"
+                android:minWidth="@dimen/extra_standard_padding"
+                android:gravity="center_horizontal|center_vertical"
+                android:background="@drawable/circle_blue_shape"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                style="@style/Text.White.H12"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bag"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            android:padding="7dp"
+            android:layout_margin="5dp">
+
+            <ImageView android:id="@+id/bagIcon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_shopping_cart_white_36dp"/>
+
+            <TextView
+                android:id="@+id/bagCounter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/extra_standard_padding"
+                android:minWidth="@dimen/extra_standard_padding"
+                android:gravity="center_horizontal|center_vertical"
+                android:background="@drawable/circle_blue_shape"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                style="@style/Text.White.H12"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_padding"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/cost_info_sub_total_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/standard_item_height"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/sub_total"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="@dimen/standard_padding"
+                style="@style/Text.Black.H16.Bold"/>
+
+            <TextView
+                android:id="@+id/cost_info_sub_total_tv"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:text="@string/fifty_dollars"
+                android:layout_gravity="right|center_vertical"
+                android:gravity="right"
+                android:layout_marginRight="@dimen/standard_padding"
+                style="@style/Text.Black.H16"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cost_info_discount_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/standard_item_height"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/discount"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="@dimen/standard_padding"
+                style="@style/Text.Orange.H16.Bold"/>
+
+            <TextView
+                android:id="@+id/cost_info_discount_tv"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:text="@string/fifty_dollars"
+                android:layout_gravity="right|center_vertical"
+                android:gravity="right"
+                android:layout_marginRight="@dimen/standard_padding"
+                style="@style/Text.Orange.H16"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cost_info_shipping_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/standard_item_height"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/shipping"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="@dimen/standard_padding"
+                style="@style/Text.Black.H16.Bold"/>
+
+            <TextView
+                android:id="@+id/cost_info_shipping_tv"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:text="@string/fifty_dollars"
+                android:layout_gravity="right|center_vertical"
+                android:gravity="right"
+                android:layout_marginRight="@dimen/standard_padding"
+                style="@style/Text.Black.H16"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cost_info_total_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/standard_item_height"
+        android:background="@color/silver"
+        android:layout_marginTop="@dimen/extra_small_padding"
+        android:layout_marginBottom="@dimen/standard_padding"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="@string/total"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="@dimen/standard_padding"
+            style="@style/Text.Black.H18.Bold"/>
+
+        <TextView
+            android:id="@+id/cost_info_total_tv"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:text="@string/fifty_dollars"
+            android:layout_gravity="right|center_vertical"
+            android:gravity="right"
+            android:layout_marginRight="@dimen/standard_padding"
+            style="@style/Text.Black.H18.Bold"/>
+
+    </LinearLayout>
+
+</LinearLayout>

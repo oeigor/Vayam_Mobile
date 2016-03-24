@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/main_fr_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+    <LinearLayout android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/deals"
+            android:layout_marginLeft="@dimen/big_padding"
+            android:layout_marginTop="@dimen/big_padding"
+            style="@style/Text.Orange.H16.Bold"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/banner_deals"
+            android:scrollbars="none"
+            android:layout_marginTop="@dimen/standard_padding"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_screen_image_size"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/newIn"
+            android:layout_marginLeft="@dimen/big_padding"
+            android:layout_marginTop="@dimen/big_padding"
+            style="@style/Text.Orange.H16.Bold"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/banner_new"
+            android:scrollbars="none"
+            android:layout_marginTop="@dimen/standard_padding"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_screen_image_size"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/recommended"
+            android:layout_marginLeft="@dimen/big_padding"
+            android:layout_marginTop="@dimen/big_padding"
+            style="@style/Text.Orange.H16.Bold"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/banner_recommended"
+            android:scrollbars="none"
+            android:layout_marginTop="@dimen/standard_padding"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_screen_image_size"/>
+
+    </LinearLayout>
+
+</ScrollView>

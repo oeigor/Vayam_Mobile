@@ -1,0 +1,77 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <!-- View Pager Layout -->
+    <com.objectedge.store.ui.views.VerticalViewPageIndicator
+            android:id="@+id/product_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    <!-- Main Layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <TextView
+                android:id="@+id/product_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LIVING DOLL INDI DRESS - BLACK"
+                android:singleLine="true"
+                android:ellipsize="end"
+                style="@style/Text.Black.H14"
+                android:layout_toLeftOf="@+id/product_info_button"
+                android:layout_alignParentLeft="true"/>
+
+        <TextView
+                android:id="@+id/product_price"
+                android:layout_below="@+id/product_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$64.99"
+                style="@style/Text.Black.H12.Bold"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/product_info_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/small_padding"
+            android:layout_marginTop="@dimen/small_padding"
+            android:src="@drawable/ic_info_outline_white_36dp"
+            app:elevation="2dp"
+            app:pressedTranslationZ="12dp"
+            app:backgroundTint="@color/green"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/add_to_favorites"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_favorite_border_white_36dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/small_padding"
+            android:layout_marginRight="@dimen/small_padding"
+            app:elevation="2dp"
+            app:pressedTranslationZ="12dp"
+            app:backgroundTint="@color/red"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/add_to_bag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/add_to_favorites"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/small_padding"
+            android:layout_marginRight="@dimen/small_padding"
+            android:src="@drawable/ic_shopping_cart_white_36dp"
+            app:elevation="2dp"
+            app:pressedTranslationZ="12dp"
+            app:backgroundTint="@color/blue"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/favorites_item_height"
+              android:background="@color/orange"
+              android:padding="@dimen/small_padding">
+
+<FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.35"
+        android:background="@color/white">
+
+    <ProgressBar
+            android:id="@+id/item_bag_image_progress"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical" />
+
+    <ImageView
+            android:id="@+id/item_bag_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"/>
+
+</FrameLayout>
+
+<RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.65"
+        android:background="@color/white">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/standard_padding"
+            android:paddingTop="@dimen/small_padding"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/item_bag_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:ellipsize="end"
+                android:layout_marginBottom="@dimen/small_padding"
+                style="@style/Text.Black.H12"/>
+
+        <TextView
+                android:id="@+id/item_bag_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Text.Black.H12.Bold"/>
+
+        <TextView
+                android:id="@+id/item_bag_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/small_padding"
+                style="@style/Text.Black.H12.Bold"/>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/item_bag_add_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_exposure_plus_1_white_36dp"
+            android:layout_marginBottom="@dimen/small_padding"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/small_padding"
+            app:elevation="2dp"
+            app:pressedTranslationZ="12dp"
+            app:backgroundTint="@color/green"/>
+
+    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/item_bag_substruct_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_exposure_neg_1_white_36dp"
+            android:layout_marginBottom="@dimen/small_padding"
+            android:layout_toLeftOf="@+id/item_bag_add_one"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/small_padding"
+            app:elevation="2dp"
+            app:pressedTranslationZ="12dp"
+            app:backgroundTint="@color/blue"/>
+
+    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/item_bag_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_delete_white_36dp"
+            android:layout_marginBottom="@dimen/small_padding"
+            android:layout_toLeftOf="@+id/item_bag_substruct_one"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/small_padding"
+            app:elevation="2dp"
+            app:pressedTranslationZ="12dp"
+            app:backgroundTint="@color/red"/>
+
+</RelativeLayout>
+
+</LinearLayout>

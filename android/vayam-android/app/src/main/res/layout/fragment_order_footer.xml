@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.objectedge.store.ui.views.CostInfoView
+            android:id="@+id/order_cost_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_padding"/>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/standard_padding">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_payment_info"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="@dimen/standard_padding"
+                android:layout_centerVertical="true"
+                style="@style/Text.Orange.H18.Bold"/>
+
+        <android.support.design.widget.FloatingActionButton
+                android:id="@+id/order_add_payment_info_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_mode_edit_white_36dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/small_padding"
+                android:layout_marginBottom="@dimen/small_padding"
+                app:elevation="2dp"
+                app:pressedTranslationZ="12dp"
+                app:backgroundTint="@color/blue"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+            android:id="@+id/order_payment_expand_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/extra_small_padding"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+        <com.objectedge.store.ui.views.PaymentBlockView
+                android:id="@+id/order_payment_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="@dimen/standard_padding"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/standard_padding">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_shipping_info"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="@dimen/standard_padding"
+                android:layout_centerVertical="true"
+                style="@style/Text.Orange.H18.Bold"/>
+
+        <android.support.design.widget.FloatingActionButton
+                android:id="@+id/order_add_sipping_info_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_mode_edit_white_36dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/small_padding"
+                android:layout_marginBottom="@dimen/small_padding"
+                app:elevation="2dp"
+                app:pressedTranslationZ="12dp"
+                app:backgroundTint="@color/blue"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+            android:id="@+id/order_shipping_expand_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/extra_small_padding"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+        <com.objectedge.store.ui.views.AddressInfoView
+                android:id="@+id/order_address_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="@dimen/standard_padding"/>
+
+    </LinearLayout>
+
+    <Button
+            android:id="@+id/order_checkout"
+            android:layout_width="@dimen/login_button_width"
+            android:layout_height="@dimen/standard_item_height"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_marginTop="@dimen/big_padding"
+            android:layout_marginBottom="@dimen/standard_padding"
+            android:text="@string/checkout"
+            style="@style/Text.White.H16.Bold"
+            android:background="@drawable/orange_button_shape"/>
+
+</LinearLayout>

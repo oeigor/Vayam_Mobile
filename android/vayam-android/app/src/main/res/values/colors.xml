@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="silver">#c0c0c0</color>
+    <color name="orange">#f79b3f</color>
+    <color name="orange_ripple">#f87a33</color>
+    <color name="blue">#8cb5cc</color>
+    <color name="white">#ffffff</color>
+    <color name="red">#cc304e</color>
+    <color name="green">#215e21</color>
+    <!-- From Surfstitch -->
+    <color name="header_text_color">#D2D1D7</color>
+    <color name="translucent">#44000000</color>
+    <color name="white_transculent">#23ffffff</color>
+    <color name="pink">#FFF7F5</color>
+</resources>

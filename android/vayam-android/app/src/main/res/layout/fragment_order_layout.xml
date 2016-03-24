@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <in.srain.cube.views.GridViewWithHeaderAndFooter
+            android:id="@+id/order_grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:horizontalSpacing="@dimen/big_padding"
+            android:verticalSpacing="@dimen/standard_padding"
+            android:paddingLeft="@dimen/standard_padding"
+            android:paddingRight="@dimen/standard_padding"
+            android:paddingTop="@dimen/standard_padding"
+            android:scrollbars="none"
+            android:visibility="visible"/>
+
+    <!--No items Layout -->
+    <LinearLayout
+            android:id="@+id/order_no_items_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center_horizontal|center_vertical"
+            android:visibility="gone">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/big_padding"
+                android:text="@string/there_are_no_items_in_your_cart"
+                style="@style/Text.Blue.H16.Bold"/>
+
+        <Button
+                android:id="@+id/order_continue_shopping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center_horizontal|center_vertical"
+                android:background="@drawable/orange_button_shape"
+                android:text="@string/continue_shopping"
+                android:layout_marginBottom="@dimen/big_padding"
+                android:layout_marginLeft="@dimen/standard_padding"
+                android:layout_marginRight="@dimen/standard_padding"
+                android:layout_marginTop="@dimen/standard_padding"
+                android:paddingLeft="@dimen/big_padding"
+                android:paddingRight="@dimen/big_padding"
+                android:paddingBottom="@dimen/standard_padding"
+                android:paddingTop="@dimen/standard_padding"
+                style="@style/Text.White.H16.Bold"/>
+    </LinearLayout>
+
+</FrameLayout>
